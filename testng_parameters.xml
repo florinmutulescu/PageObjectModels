@@ -10,7 +10,7 @@
 	    <parameter name ="pass" value = "customer@123"/>   
 
         <classes>
-            <class name="tests.LoginTest" ></class>
+             <class name="tests.Tema23Test" ></class>
         </classes>
     </test> 
     

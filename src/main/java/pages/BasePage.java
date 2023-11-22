@@ -11,5 +11,9 @@ public class BasePage extends SeleniumWrappers{
 	}
 	public MenuPage menu = new MenuPage(driver);
 	public MyAccountPage myAccount= new MyAccountPage(driver);
+	public SearchProduct sp = new SearchProduct(driver);
+	public ProductPretzels pp = new ProductPretzels(driver);
+	public CartPretzels cp = new CartPretzels(driver);
+	public CheckoutPage chp = new CheckoutPage(driver);
 
 }

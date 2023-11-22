@@ -71,7 +71,7 @@ public class SeleniumWrappers extends BaseTest{
 		}
 	}
     public void sendKeys(By locator,String text) {
-    	Log.info("strated method <sendKeys()> on locator " + locator.toString());
+    	Log.info("started method <sendKeys()> on locator " + locator.toString());
     	 WebElement element =returnWebElement(locator);
     	 waitForElementToBeVisible(locator);
     	 try{
