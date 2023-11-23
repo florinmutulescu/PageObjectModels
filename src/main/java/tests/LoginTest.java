@@ -16,8 +16,8 @@ public class LoginTest extends BaseTest{
 	public void validLogin(String user,String pass)throws IOException {
 		app.click(app.menu.myAccountLink);
 		app.myAccount.loginInApp(user,pass);
-		
-		assertTrue(app.elementIsDisplayed(app.myAccount.errorMsg));
+		//assertTrue(app.elementIsDisplayed(app.myAccount.errorMsg));
+		assertTrue(app.elementIsDisplayed(app.myAccount.successMsg));
 		ScreenShots.screenshot(driver);
 		app.click(app.myAccount.logoutButton);
 		
