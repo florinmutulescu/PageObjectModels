@@ -16,6 +16,13 @@ public class MyAccountPage extends SeleniumWrappers {
 	public By errorMsg = By.cssSelector("ul[class='woocommerce-error'] strong");
 	public By successMsg = By.cssSelector("div[class='woocommerce-MyAccount-content']");
 	public By logoutButton = By.xpath("//a[contains(text(), 'Log out')]");
+	//public By allCategories= By.xpath("//a[contains(text(), 'ALL CATEGORIES')]");
+	public By allCategories= By.xpath("//div[@class='all-categories locked']");
+	public By fruitsVegetables = By.xpath("//div/ul/li/a[contains(text(),'Fruits & Vegetables')]");
+	public By breakfastDairy = By.xpath("//li[@class='category-parent  menu-item menu-item-type-taxonomy menu-item-object-product_cat']/a[@href="
+			+ "'https://keyfood.ro/product-category/breakfast-dairy/']");
+	public By biscuitsSnacks =By.xpath("//a[text()=' Biscuits & Snacks']");
+	public By beverages =By.xpath("(//a[@href='https://keyfood.ro/product-category/beverages/'])[2]");
 	
 	public void loginInApp(String user,String pass) {
 		sendKeys(userField,user);

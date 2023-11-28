@@ -10,6 +10,6 @@ public class MenuPage extends SeleniumWrappers{
 	public MenuPage(WebDriver driver) {
 		super(driver);
 		}
-	public By  myAccountLink=By.linkText("My account");
-
+	public By myAccountLink=By.linkText("My account");
+	public By wishlistLink=By.cssSelector("a[href='https://keyfood.ro/wishlist/']");
 }
